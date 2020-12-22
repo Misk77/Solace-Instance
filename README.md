@@ -2,6 +2,7 @@ SOURCE: Amazon Linux on AWS
 https://docs.solace.com/Solace-SW-Broker-Set-Up/Docker-Containers/Set-Up-Docker-Container-AMI-EC2.htm
 
 ---
+
 > terraform.tfvars , contains:
 
 region               = "eu-north-1"
@@ -16,7 +17,8 @@ instance_ami  = "ami-02511cb3673b49e04"
 keyname       = "aws_pari_key.pem_created for ssh into ecs"
 
 ---
---- install_solace.sh
+--- 
+install_solace.sh
 
 --env 'username_admin_globalaccesslevel=admin' \
 --env 'username_admin_password=admin' \
@@ -24,7 +26,8 @@ keyname       = "aws_pari_key.pem_created for ssh into ecs"
 
 ---
 
---- To access the Solace CLI:
+--- 
+To access the Solace CLI:
 
 Enter the following docker exec command:
 
@@ -48,6 +51,9 @@ User Name: admin
 Password: admin
 
 ---
---- To access into the Solace  WEB UI:
+
+--- 
+To access into the Solace  WEB UI:
 <AWS public IP>:8080
+---
 # Solace-Instance
