@@ -47,7 +47,7 @@ For a list of Solace CLI commands currently supported on the event broker, refer
 
 To access with Solace SolAdmin:
 
-Management IP:  <AWS public IP>
+Management IP:  [AWS public IP]
 Management port: 8080
 User Name: admin
 Password: admin
@@ -56,7 +56,7 @@ Password: admin
 
 --- 
 To access into the Solace WEB UI:
-<AWS public IP>:8080
+[AWS public IP]:8080
 
 ---
 # Solace-Instance
