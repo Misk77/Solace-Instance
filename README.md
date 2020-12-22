@@ -63,9 +63,12 @@ Password: admin
 ---
 
 --- 
+
 To access into the Solace WEB UI:
 
+
 [AWS public IP]:8080
+
 
 ---
 # Solace-Instance
