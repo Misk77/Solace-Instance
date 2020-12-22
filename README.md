@@ -1,6 +1,20 @@
 SOURCE: Amazon Linux on AWS
 https://docs.solace.com/Solace-SW-Broker-Set-Up/Docker-Containers/Set-Up-Docker-Container-AMI-EC2.htm
 
+---
+> terraform.tfvars , contains:
+
+region               = "eu-north-1"
+environment          = "Solace"
+vpc_cidr             = "10.0.0.0/16"
+public_subnet_1_cidr = "10.0.1.0/24"
+
+private_subnet_1_cidr = "10.0.10.0/24"
+
+instance_type = "t3.micro"
+instance_ami  = "ami-02511cb3673b49e04"
+keyname       = "aws_pari_key.pem_created for ssh into ecs"
+
 
 --- 
 
