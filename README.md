@@ -19,7 +19,7 @@ instance_type = "t3.micro"
 
 instance_ami  = "ami-02511cb3673b49e04"
 
-keyname       = "aws_pari_key.pem_created for ssh into ecs"
+keyname       = "aws_pari_key.pem_created for ssh into ec2"
 
 ---
 --- 
@@ -67,7 +67,7 @@ Password: admin
 To access into the Solace WEB UI:
 
 
-[AWS public IP]:8080
+ [AWS public IP]:8080
 
 
 ---
