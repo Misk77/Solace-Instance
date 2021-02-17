@@ -18,6 +18,8 @@ sudo service docker stop
 sudo su
 echo OPTIONS="--iptables=false --storage-driver=devicemapper" >> /etc/sysconfig/docker
 sudo su ec2-user
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 sudo service docker start
 sudo docker pull solace/solace-pubsub-standard
 
