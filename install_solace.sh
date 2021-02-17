@@ -16,7 +16,7 @@ sudo swapon -f /var/lib/solace/swap
 sudo grep -q 'solace\/swap' /etc/fstab || sudo sh -c 'echo "/var/lib/solace/swap none swap sw 0 0" >> /etc/fstab'
 sudo service docker stop
 sudo su
-echo OPTIONS="--iptables=false --storage-driver=devicemapper" >> /etc/sysconfig/docker
+echo OPTIONS="--iptables=false --storage-driver=devicemapper --restart=always" >> /etc/sysconfig/docker
 sudo su ec2-user
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
